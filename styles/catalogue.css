@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #ffebcd;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    height: 80px;
+}
+
+nav {
+    background-color: #ffebcd;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 10px 15px;
+    transition: background-color 0.2s ease; /* More subtle transition */
+}
+
+nav a:hover {
+    background-color: #ddd; /* Lighter color on hover */
+}
+
+.filter {
+    text-align: center;
+    padding: 20px;
+}
+
+.filter button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter button:hover {
+    background-color: #555;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Subtle hover zoom */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.product:hover .description {
+    opacity: 1; /* Fade in on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffebcd;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
